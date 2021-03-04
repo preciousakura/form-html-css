@@ -1,0 +1,231 @@
+@font-face {
+  font-family: Keep Calm;
+  src: url("fonts/KeepCalm-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url(../imgs/fundo.png);
+  background-size: cover; 
+  overflow: hidden;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#content {
+    background: #fff;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px 0px rgb(210 180 180 / 76%);
+    border-radius: 20px;
+} 
+
+#content #form-subscribe .form-sub, #content #form-login .form-sub {
+  display: block; 
+  width: 100%;
+
+}
+
+#form-login a {
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none;
+    color: #25946a;
+}
+
+#form-login a:hover {
+    color: #000;
+}
+
+
+#form-login h5 {
+  padding-bottom: 38px;
+}
+
+#content #form-subscribe, #content #form-login {
+    text-align: center;
+    width: 767px;
+}
+
+#content #form-subscribe .icons .fab, #content #form-login .icons .fab{
+  color: black;
+  background: white;
+  padding: 15px;
+  width: 10px;
+  line-height: 10px;
+  height: 10px;
+  border: 1px solid #CDCDCD;
+  border-radius: 100%;
+  margin: 22px 20px;
+  transition: 0.5s ease all;
+}
+
+#content #form-subscribe .icons .fab:hover, #content #form-login .icons .fab:hover {
+  color: #25946a;
+}
+
+#content #form-subscribe p, #content #form-login p {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 10px;
+  color: #a3a3a3;
+}
+
+#content #form-subscribe .form-sub input, #content #form-login .form-sub input {
+  padding: 10px 38px;
+  width: 385px;
+  box-sizing: border-box; 
+  margin-bottom: 30px;
+  background: #EBEBEB;
+  outline: none;
+  border: none;
+}
+
+#content #form-subscribe .form-sub button, #content #form-login .form-sub button {
+    border-radius: 18px;
+    padding: 12px 47px;
+    display: flex;
+    margin: 0 auto;
+    outline: none;
+    transition: 0.5s ease all;
+    margin-bottom: 50px;
+    background: #fff;
+    color: #25946a;
+    border: 1px solid #25946a;
+
+}
+
+#content #form-subscribe .form-sub button:hover, #content #form-login .form-sub button:hover {
+  background: #25946a;
+  color: white;
+  border: 1px solid #25946a;
+  
+}
+
+#content #form-subscribe h1, #content #form-login h1  {
+  color: #25946a;
+  font-family: Keep Calm;
+  padding: 50px 0 0;
+} 
+
+#content #form-subscribe .form-sub i, #content #form-login .form-sub i {
+    position: absolute;
+    line-height: 35px;
+    padding: 0 13px;
+    color: #B2B2B2;
+    font-size: 12px;
+}
+
+#test {
+  display: none;
+}
+
+::placeholder { 
+  color: #B2B2B2;
+  opacity: 1; 
+}
+
+div#form-login {
+    position: absolute;
+    right: 0;
+    left: 999px;
+    transition: all 2s ease 0s;
+}
+
+#div-form-log {
+    width: 0%;
+    position: relative;
+    transition: all 2s ease 0s;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#div-form-sub {
+    width: 100%;
+    position: relative;
+    transition: all 2s ease 0s;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#form-subscribe {
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition: all 2s ease 0s;
+}
+
+/* style do lado esquerdo bloco de slide welcome */
+
+
+#content .welcome {
+    /*background: url(../imgs/FundoSlinde.png)center center;*/
+    background: blue;
+    background-size: 421px 507px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#content .welcome h3{
+    font-family: Keep Calm;
+    letter-spacing: 0.6px;
+    font-size: 20px;
+}
+
+#content .welcome p{
+  font-family: Arial;
+  font-size: 14px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+#content .welcome button {
+    border-radius: 18px;
+    padding: 12px 47px;
+    outline: none;
+    transition: 0.5s ease all;
+    background: #fff0;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#content .welcome button:hover{
+  background: #ffffff30;
+}
